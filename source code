@@ -21,7 +21,169 @@ struct passDet {
     int licenceNo;
 };
 
+// This struct defines company data.
+struct company {
+    char name[100];
+    char address[200];
+    char type[50];
+};
+
 int totalCars = 0; // The total number of cars.
+int totalCompanies = 0; // The total number of companies.
+
+// This function initializes company data for Vaishnavi Tech Park Bellandur.
+void initCompanies(struct company companies[]) {
+    // Vaishnavi Tech Park Bellandur companies
+    strcpy(companies[0].name, "Accenture");
+    strcpy(companies[0].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[0].type, "IT Services");
+    totalCompanies++;
+
+    strcpy(companies[1].name, "Wipro Technologies");
+    strcpy(companies[1].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[1].type, "IT Services");
+    totalCompanies++;
+
+    strcpy(companies[2].name, "TCS");
+    strcpy(companies[2].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[2].type, "IT Services");
+    totalCompanies++;
+
+    strcpy(companies[3].name, "Infosys Limited");
+    strcpy(companies[3].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[3].type, "IT Services");
+    totalCompanies++;
+
+    strcpy(companies[4].name, "Cognizant Technology Solutions");
+    strcpy(companies[4].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[4].type, "IT Services");
+    totalCompanies++;
+
+    strcpy(companies[5].name, "IBM India");
+    strcpy(companies[5].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[5].type, "Technology");
+    totalCompanies++;
+
+    strcpy(companies[6].name, "Microsoft India Development Center");
+    strcpy(companies[6].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[6].type, "Technology");
+    totalCompanies++;
+
+    strcpy(companies[7].name, "Oracle India");
+    strcpy(companies[7].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[7].type, "Software");
+    totalCompanies++;
+
+    strcpy(companies[8].name, "SAP Labs India");
+    strcpy(companies[8].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[8].type, "Software");
+    totalCompanies++;
+
+    strcpy(companies[9].name, "Capgemini India");
+    strcpy(companies[9].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[9].type, "Consulting");
+    totalCompanies++;
+
+    strcpy(companies[10].name, "HCL Technologies");
+    strcpy(companies[10].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[10].type, "IT Services");
+    totalCompanies++;
+
+    strcpy(companies[11].name, "Tech Mahindra");
+    strcpy(companies[11].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[11].type, "IT Services");
+    totalCompanies++;
+
+    strcpy(companies[12].name, "Mindtree Limited");
+    strcpy(companies[12].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[12].type, "Digital Technology");
+    totalCompanies++;
+
+    strcpy(companies[13].name, "L&T Infotech");
+    strcpy(companies[13].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[13].type, "IT Services");
+    totalCompanies++;
+
+    strcpy(companies[14].name, "Mphasis");
+    strcpy(companies[14].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[14].type, "IT Services");
+    totalCompanies++;
+
+    strcpy(companies[15].name, "Mu Sigma");
+    strcpy(companies[15].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[15].type, "Analytics");
+    totalCompanies++;
+
+    strcpy(companies[16].name, "Flipkart");
+    strcpy(companies[16].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[16].type, "E-commerce");
+    totalCompanies++;
+
+    strcpy(companies[17].name, "Swiggy");
+    strcpy(companies[17].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[17].type, "Food Delivery");
+    totalCompanies++;
+
+    strcpy(companies[18].name, "Byju's");
+    strcpy(companies[18].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[18].type, "EdTech");
+    totalCompanies++;
+
+    strcpy(companies[19].name, "Unacademy");
+    strcpy(companies[19].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[19].type, "EdTech");
+    totalCompanies++;
+
+    strcpy(companies[20].name, "Ola");
+    strcpy(companies[20].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[20].type, "Mobility");
+    totalCompanies++;
+
+    strcpy(companies[21].name, "Zomato");
+    strcpy(companies[21].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[21].type, "Food Tech");
+    totalCompanies++;
+
+    strcpy(companies[22].name, "Razorpay");
+    strcpy(companies[22].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[22].type, "FinTech");
+    totalCompanies++;
+
+    strcpy(companies[23].name, "Paytm");
+    strcpy(companies[23].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[23].type, "FinTech");
+    totalCompanies++;
+
+    strcpy(companies[24].name, "CRED");
+    strcpy(companies[24].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[24].type, "FinTech");
+    totalCompanies++;
+
+    strcpy(companies[25].name, "Freshworks");
+    strcpy(companies[25].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[25].type, "SaaS");
+    totalCompanies++;
+
+    strcpy(companies[26].name, "Zoho Corporation");
+    strcpy(companies[26].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[26].type, "Software");
+    totalCompanies++;
+
+    strcpy(companies[27].name, "Myntra");
+    strcpy(companies[27].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[27].type, "E-commerce");
+    totalCompanies++;
+
+    strcpy(companies[28].name, "BigBasket");
+    strcpy(companies[28].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[28].type, "E-commerce");
+    totalCompanies++;
+
+    strcpy(companies[29].name, "Nykaa");
+    strcpy(companies[29].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[29].type, "E-commerce");
+    totalCompanies++;
+}
 
 // This function initializes the car data.
 void initCars(struct car cars[]) {
@@ -105,6 +267,18 @@ int bookCar(struct car cars[], int carNumber, int numDays) {
     return 0;
 }
 
+// This function displays companies at Vaishnavi Tech Park Bellandur.
+void displayCompaniesAtVaishnaviTechPark(struct company companies[]) {
+    printf("\n=== Companies at Vaishnavi Tech Park Bellandur ===\n");
+    printf("Address: Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103\n\n");
+    
+    int i;
+    for (i = 0; i < totalCompanies; i++) {
+        printf("%d. %s\n", i + 1, companies[i].name);
+    }
+    printf("\nTotal companies: %d\n\n", totalCompanies);
+}
+
 // This function displays the list of cars.
 void displayCars(struct car cars[]) {
     int i;
@@ -124,43 +298,74 @@ void displayCars(struct car cars[]) {
 }
 
 // This is the main function.
-
-
-// ... (rest of the code remains the same)
-
-// This is the main function.
 int main() {
-    // Declare the cars array.
+    // Declare the cars array and companies array.
     struct car cars[5];
+    struct company companies[50];
 
-    // Initialize the car data.
+    // Initialize the car data and company data.
     initCars(cars);
+    initCompanies(companies);
 
-    // Display the list of cars.
-    displayCars(cars);
-
-    // Book a car.
-    int carNumber, numDays;
-    int success = 0;
-
+    int choice;
     do {
-        printf("Enter the car number: ");
-        scanf("%d", &carNumber);
-        printf("Enter the number of days: ");
-        scanf("%d", &numDays);
+        // Display main menu
+        printf("\n=== Smart Car Rental Bot ===\n");
+        printf("1. View available cars and book\n");
+        printf("2. Search companies at Vaishnavi Tech Park Bellandur\n");
+        printf("3. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
 
-        success = bookCar(cars, carNumber, numDays);
+        switch(choice) {
+            case 1: {
+                // Display the list of cars.
+                displayCars(cars);
 
-        if (success == -1) {
-            printf("Please enter a valid car number.\n");
+                // Book a car.
+                int carNumber, numDays;
+                int success = 0;
+
+                do {
+                    printf("Enter the car number to book (or 0 to go back): ");
+                    scanf("%d", &carNumber);
+                    
+                    if (carNumber == 0) {
+                        break;
+                    }
+                    
+                    printf("Enter the number of days: ");
+                    scanf("%d", &numDays);
+
+                    success = bookCar(cars, carNumber, numDays);
+
+                    if (success == -1) {
+                        printf("Please enter a valid car number.\n");
+                    }
+                } while (success == -1);
+
+                if (success && carNumber != 0) {
+                    printf("Car booking successful.\n");
+                } else if (carNumber != 0) {
+                    printf("Car booking failed.\n");
+                }
+                break;
+            }
+            case 2: {
+                // Display companies at Vaishnavi Tech Park Bellandur
+                displayCompaniesAtVaishnaviTechPark(companies);
+                break;
+            }
+            case 3: {
+                printf("Thank you for using Smart Car Rental Bot!\n");
+                break;
+            }
+            default: {
+                printf("Invalid choice. Please try again.\n");
+                break;
+            }
         }
-    } while (success == -1);
-
-    if (success) {
-        printf("Car booking successful.\n");
-    } else {
-        printf("Car booking failed.\n");
-    }
+    } while (choice != 3);
 
     return 0;
 }
