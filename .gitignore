@@ -1,0 +1,11 @@
+# Compiled C files
+*.o
+*.out
+*.exe
+car_rental_bot
+smart_bot
+original_test
+
+# Temporary files
+*.tmp
+*~

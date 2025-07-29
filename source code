@@ -15,6 +15,14 @@ struct car {
     float carPricePerDay; // The car's price per day.
 };
 
+// This struct defines the data for a company.
+struct company {
+    char companyName[100];  // The company's name.
+    char address[200];      // The company's address.
+    char sector[50];        // The company's business sector.
+    int established;        // Year established.
+};
+
 // This struct defines the data for a passenger.
 struct passDet {
     char name[10];
@@ -22,6 +30,7 @@ struct passDet {
 };
 
 int totalCars = 0; // The total number of cars.
+int totalCompanies = 0; // The total number of companies.
 
 // This function initializes the car data.
 void initCars(struct car cars[]) {
@@ -78,6 +87,111 @@ void initCars(struct car cars[]) {
     totalCars++;
 }
 
+// This function initializes the company data for Vaishnavi Tech Park Bellandur.
+void initCompanies(struct company companies[]) {
+    // Initialize company data for Vaishnavi Tech Park Bellandur
+    strcpy(companies[0].companyName, "Accenture");
+    strcpy(companies[0].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[0].sector, "IT Services & Consulting");
+    companies[0].established = 1989;
+    totalCompanies++;
+
+    strcpy(companies[1].companyName, "IBM India");
+    strcpy(companies[1].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[1].sector, "Technology & Cloud Services");
+    companies[1].established = 1911;
+    totalCompanies++;
+
+    strcpy(companies[2].companyName, "Wipro Limited");
+    strcpy(companies[2].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[2].sector, "IT Services & Business Process Services");
+    companies[2].established = 1945;
+    totalCompanies++;
+
+    strcpy(companies[3].companyName, "Dell Technologies");
+    strcpy(companies[3].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[3].sector, "Computer Technology & Hardware");
+    companies[3].established = 1984;
+    totalCompanies++;
+
+    strcpy(companies[4].companyName, "Microsoft India");
+    strcpy(companies[4].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[4].sector, "Software & Cloud Computing");
+    companies[4].established = 1975;
+    totalCompanies++;
+
+    strcpy(companies[5].companyName, "Oracle India");
+    strcpy(companies[5].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[5].sector, "Database Software & Cloud Applications");
+    companies[5].established = 1977;
+    totalCompanies++;
+
+    strcpy(companies[6].companyName, "SAP Labs India");
+    strcpy(companies[6].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[6].sector, "Enterprise Software Solutions");
+    companies[6].established = 1972;
+    totalCompanies++;
+
+    strcpy(companies[7].companyName, "Cognizant Technology Solutions");
+    strcpy(companies[7].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[7].sector, "IT Services & Digital Solutions");
+    companies[7].established = 1994;
+    totalCompanies++;
+
+    strcpy(companies[8].companyName, "Infosys Limited");
+    strcpy(companies[8].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[8].sector, "Information Technology & Consulting");
+    companies[8].established = 1981;
+    totalCompanies++;
+
+    strcpy(companies[9].companyName, "Tech Mahindra");
+    strcpy(companies[9].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[9].sector, "IT Services & Digital Transformation");
+    companies[9].established = 1986;
+    totalCompanies++;
+
+    strcpy(companies[10].companyName, "Capgemini India");
+    strcpy(companies[10].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[10].sector, "Consulting & Technology Services");
+    companies[10].established = 1967;
+    totalCompanies++;
+
+    strcpy(companies[11].companyName, "HCL Technologies");
+    strcpy(companies[11].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[11].sector, "IT Services & Engineering");
+    companies[11].established = 1976;
+    totalCompanies++;
+
+    strcpy(companies[12].companyName, "Tata Consultancy Services");
+    strcpy(companies[12].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[12].sector, "IT Services & Consulting");
+    companies[12].established = 1968;
+    totalCompanies++;
+
+    strcpy(companies[13].companyName, "VMware India");
+    strcpy(companies[13].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[13].sector, "Cloud Computing & Virtualization");
+    companies[13].established = 1998;
+    totalCompanies++;
+
+    strcpy(companies[14].companyName, "Cisco Systems India");
+    strcpy(companies[14].address, "Vaishnavi Tech Park, Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103");
+    strcpy(companies[14].sector, "Networking Hardware & Software");
+    companies[14].established = 1984;
+    totalCompanies++;
+}
+
+// This function displays the list of companies in Vaishnavi Tech Park Bellandur.
+void displayCompanies(struct company companies[]) {
+    printf("\n=== COMPANIES IN VAISHNAVI TECH PARK BELLANDUR ===\n");
+    printf("Address: Sarjapur Main Rd, Bellandur, Bengaluru, Karnataka 560103\n\n");
+    
+    for (int i = 0; i < totalCompanies; i++) {
+        printf("%d. %s\n", i+1, companies[i].companyName);
+    }
+    printf("\nTotal companies listed: %d\n", totalCompanies);
+}
+
 // This function books a car.
 int bookCar(struct car cars[], int carNumber, int numDays) {
     int i;
@@ -124,42 +238,60 @@ void displayCars(struct car cars[]) {
 }
 
 // This is the main function.
-
-
-// ... (rest of the code remains the same)
-
-// This is the main function.
 int main() {
     // Declare the cars array.
     struct car cars[5];
+    // Declare the companies array.
+    struct company companies[20];
 
     // Initialize the car data.
     initCars(cars);
+    // Initialize the company data.
+    initCompanies(companies);
 
-    // Display the list of cars.
-    displayCars(cars);
+    int choice;
+    printf("\n=== SMART CAR RENTAL & COMPANY DIRECTORY BOT ===\n");
+    printf("1. Car Rental Service\n");
+    printf("2. Companies in Vaishnavi Tech Park Bellandur\n");
+    printf("Enter your choice (1 or 2): ");
+    scanf("%d", &choice);
 
-    // Book a car.
-    int carNumber, numDays;
-    int success = 0;
+    if (choice == 1) {
+        // Car rental functionality
+        printf("\n=== CAR RENTAL SERVICE ===\n");
+        
+        // Display the list of cars.
+        displayCars(cars);
 
-    do {
-        printf("Enter the car number: ");
-        scanf("%d", &carNumber);
-        printf("Enter the number of days: ");
-        scanf("%d", &numDays);
+        // Book a car.
+        int carNumber, numDays;
+        int success = 0;
 
-        success = bookCar(cars, carNumber, numDays);
+        do {
+            printf("Enter the car number: ");
+            scanf("%d", &carNumber);
+            printf("Enter the number of days: ");
+            scanf("%d", &numDays);
 
-        if (success == -1) {
-            printf("Please enter a valid car number.\n");
+            success = bookCar(cars, carNumber, numDays);
+
+            if (success == -1) {
+                printf("Please enter a valid car number.\n");
+            }
+        } while (success == -1);
+
+        if (success) {
+            printf("Car booking successful.\n");
+        } else {
+            printf("Car booking failed.\n");
         }
-    } while (success == -1);
-
-    if (success) {
-        printf("Car booking successful.\n");
-    } else {
-        printf("Car booking failed.\n");
+    }
+    else if (choice == 2) {
+        // Company directory functionality
+        displayCompanies(companies);
+    }
+    else {
+        printf("Invalid choice. Please run the program again and select 1 or 2.\n");
     }
 
     return 0;
